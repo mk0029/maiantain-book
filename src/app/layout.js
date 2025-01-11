@@ -8,7 +8,7 @@ import { emotionCache } from "../../emotion-cache";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body>
         <div className="theme-custom theme-dark"></div>
 
