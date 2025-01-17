@@ -1,7 +1,12 @@
 import React from "react";
+import GetStarted from "./GetStarted";
 
 const Authentication = () => {
-  return <div>Authentication</div>;
+  return (
+    <>
+      <GetStarted />
+    </>
+  );
 };
 
 export default Authentication;

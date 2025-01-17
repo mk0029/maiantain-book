@@ -1,29 +1,28 @@
-/*  */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 ::after,
 ::before {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
   transition: color 300ms linear, background 300ms linear, border 300ms linear,
     shadow 300ms linear, stroke 300ms linear, fill 300ms linear,
     opacity 300ms linear, transform 300ms linear;
 }
-html,
 body {
-  background: white !important;
+  background-color: rgb(48, 47, 47);
 }
-.theme-custom {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  height: 100vh;
-  transform: translateX(-50%);
-  opacity: 0;
-  width: 0;
-  transition: all 300ms linear !important;
-}
-.theme-custom.theme-dark {
-  background-color: black;
-}
-body.chakra-ui-dark .theme-dark {
-  width: 100vw;
-  opacity: 1;
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-60%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }

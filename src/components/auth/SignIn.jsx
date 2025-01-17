@@ -1,7 +1,8 @@
 import React from "react";
+import ParentCard from "./ParentCard";
 
 const SignIn = () => {
-  return <div>SignIn</div>;
+  return <ParentCard />;
 };
 
 export default SignIn;
